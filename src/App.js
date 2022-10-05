@@ -1,11 +1,17 @@
+import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Parent from "./components/childToParent/Parent";
+import Header from "./components/Header";
+import ChildToParentView from "./views/ChildToParentView";
+import LandingPage from "./views/LandingPage";
 
 function App() {
   return (
     <div className="App">
-      <h1>Lusy's Playground!</h1>
-      <Parent />
+      <Header />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/child-to-parent" element={<ChildToParentView />} />
+      </Routes>
     </div>
   );
 }
