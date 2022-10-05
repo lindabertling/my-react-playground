@@ -1,12 +1,13 @@
 import React from "react";
+import "./ChildToParentView.css";
 import Parent from "../components/childToParent/Parent";
 
-const childToParentView = () => {
+const ChildToParentView = () => {
   return (
-    <div>
+    <div className="content-container">
       <Parent />
     </div>
   );
 };
 
-export default childToParentView;
+export default ChildToParentView;
