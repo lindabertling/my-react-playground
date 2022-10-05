@@ -9,9 +9,6 @@ const Child = ({ changeWord }) => {
       <Button onClick={() => changeWord("Lusen")}>
         Click to change the word
       </Button>
-      {/* <button onClick={() => changeWord("Lusen")}>
-        Click to change the title
-      </button> */}
     </div>
   );
 };
