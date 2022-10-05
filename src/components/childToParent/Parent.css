@@ -8,6 +8,7 @@
 
   background-color: #fdcfb3;
   color: #f9f7e8;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
   display: flex;
   flex-direction: column;
@@ -24,4 +25,7 @@ h2 {
   border: 2px dotted #cec8e4;
   padding: 8px;
   border-radius: 24px;
+  width: 200px;
+  background-color: rgba(255, 255, 255, 0.301);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }

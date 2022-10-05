@@ -7,6 +7,7 @@
   margin-bottom: 24px;
 
   background-color: #cfe4d9;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   padding: 12px;
 
   position: fixed;
@@ -16,7 +17,6 @@
 
 h1 {
   color: #cec8e4;
-  cursor: pointer;
 }
 
 .nav {
@@ -38,4 +38,8 @@ li {
   color: #f9f7e8;
   font-size: 18px;
   font-weight: 600;
+}
+
+li:active {
+  transform: scale(1.03);
 }

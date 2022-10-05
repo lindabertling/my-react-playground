@@ -6,11 +6,10 @@ const Header = () => {
   const navigate = useNavigate();
   return (
     <div className="header-container">
-      <h1 className="header-title" onClick={() => navigate("/")}>
-        Lusy's Playground!
-      </h1>
+      <h1 className="header-title">Lusy's Playground!</h1>
       <div className="nav">
         <ul>
+          <li onClick={() => navigate("/")}>Home</li>
           <li onClick={() => navigate("/child-to-parent")}>
             Props from Child to Parent
           </li>
