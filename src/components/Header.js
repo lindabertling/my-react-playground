@@ -14,7 +14,7 @@ const Header = () => {
             Props from Child to Parent
           </li>
           <li>I am a link</li>
-          <li>Link</li>
+          <li>Links</li>
         </ul>
       </div>
     </div>
