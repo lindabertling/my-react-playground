@@ -10,9 +10,7 @@ const Header = () => {
       <div className="nav">
         <ul>
           <li onClick={() => navigate("/")}>Home</li>
-          <li onClick={() => navigate("/child-to-parent")}>
-            Props from Child to Parent
-          </li>
+          <li onClick={() => navigate("/child-to-parent")}>Child to Parent</li>
           <li>I am a link</li>
           <li>Link</li>
         </ul>
