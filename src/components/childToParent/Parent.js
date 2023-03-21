@@ -5,11 +5,15 @@ import Child from "./Child";
 const Parent = () => {
   const [word, setWord] = useState("Word");
 
+  const onChangeWord = (userInputWord) => {
+    setWord(userInputWord);
+  };
+
   return (
     <div className="parent">
       <h1>Parent</h1>
       <h2>{word}</h2>
-      <Child changeWord={(word) => setWord(word)} />
+      <Child changeWord={onChangeWord} />
     </div>
   );
 };

@@ -1,22 +1,27 @@
 import React, { useState } from "react";
-import Button from "./Button";
 import "./Child.css";
-import Input from "./Input";
+import Form from "./Form";
 
 const Child = ({ changeWord }) => {
-  const [word, setWord] = useState("Lusen");
+  const [userInput, setUserInput] = useState("");
 
-  const handleSubmit = function (inputWord) {
-    setWord(inputWord);
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    changeWord(userInput);
+  };
+
+  const handleUserInput = (userInputText) => {
+    setUserInput(userInputText);
   };
 
   return (
     <div className="child">
       <h1>Child</h1>
-      <Input onSubmit={(newWord) => handleSubmit(newWord)} />
-      <Button type="submit" onClick={() => changeWord(word)}>
-        Click here to change the word
-      </Button>
+      <Form
+        handleSubmit={handleSubmit}
+        handleUserInput={handleUserInput}
+        btnTitle="Click here to change the word"
+      ></Form>
     </div>
   );
 };

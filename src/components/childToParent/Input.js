@@ -1,16 +1,19 @@
 import React, { useState } from "react";
 import "./Input.css";
 
-const Input = ({ onSubmit }) => {
+const Input = ({ handleChange }) => {
   const [userInputValue, setUserInputValue] = useState("");
+
   const getInputValue = (event) => {
     setUserInputValue(event.target.value);
-    console.log(userInputValue);
+    handleChange(userInputValue);
   };
   return (
-    <form onSubmit={onSubmit}>
-      <input type="text" onChange={getInputValue}></input>
-    </form>
+    <input
+      type="text"
+      onChange={getInputValue}
+      placeholder="Type your word here"
+    ></input>
   );
 };
 
