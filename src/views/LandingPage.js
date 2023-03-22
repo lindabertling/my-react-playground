@@ -1,11 +1,10 @@
 import React from "react";
 import "./LandingPage.css";
-import YoutubeEmbed from "../components/youtubeEmbed/YoutubeEmbed";
 
 const LandingPage = () => {
   return (
     <div className="content-container">
-      <YoutubeEmbed embedId={"IHL9u3uN65Q"} />
+      <h1>HELLO WORLD</h1>
     </div>
   );
 };

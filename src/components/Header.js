@@ -11,7 +11,7 @@ const Header = () => {
         <ul>
           <li onClick={() => navigate("/")}>Home</li>
           <li onClick={() => navigate("/child-to-parent")}>Child to Parent</li>
-          <li>I am a link</li>
+          <li onClick={() => navigate("/video")}>Salsa video</li>
           <li>Link</li>
         </ul>
       </div>
