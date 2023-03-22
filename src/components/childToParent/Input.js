@@ -1,13 +1,17 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Input.css";
 
 const Input = ({ handleChange }) => {
   const [userInputValue, setUserInputValue] = useState("");
 
+  useEffect(() => {
+    handleChange(userInputValue);
+  }, [userInputValue, handleChange]);
+
   const getInputValue = (event) => {
     setUserInputValue(event.target.value);
-    handleChange(userInputValue);
   };
+
   return (
     <input
       type="text"
