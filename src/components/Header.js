@@ -12,7 +12,7 @@ const Header = () => {
           <li onClick={() => navigate("/")}>Home</li>
           <li onClick={() => navigate("/child-to-parent")}>Child to Parent</li>
           <li onClick={() => navigate("/video")}>Salsa video</li>
-          <li>Link</li>
+          <li onClick={() => navigate("/random-quote")}>Random Quotes</li>
         </ul>
       </div>
     </div>

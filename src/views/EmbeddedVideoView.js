@@ -1,6 +1,5 @@
 import React from "react";
 import YoutubeEmbed from "../components/youtubeEmbed/YoutubeEmbed";
-import "./EmbeddedVideoView.css";
 
 const EmbeddedVideoView = () => {
   return (
