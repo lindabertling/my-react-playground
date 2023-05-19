@@ -19,8 +19,7 @@
 h1 {
   margin-bottom: 16px;
 }
-
-h2 {
+.word {
   margin-bottom: 12px;
   border: 2px dotted #cec8e4;
   padding: 8px;

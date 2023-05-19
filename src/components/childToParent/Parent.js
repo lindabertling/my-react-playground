@@ -12,7 +12,7 @@ const Parent = () => {
   return (
     <div className="parent">
       <h1>Parent</h1>
-      <h2>{word}</h2>
+      <h2 className="word">{word}</h2>
       <Child changeWord={onChangeWord} />
     </div>
   );

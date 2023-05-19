@@ -4,4 +4,34 @@
   border-radius: 8px;
 
   padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quote-container {
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.quote-text {
+  height: 70%;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-text h3 {
+  font-size: x-large;
+}
+
+.quote-author {
+  text-transform: uppercase;
+}
+
+button {
+  color: dimgrey;
 }
