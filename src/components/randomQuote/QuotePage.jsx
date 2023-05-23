@@ -53,8 +53,6 @@ const QuotePage = () => {
     applyRandomButtonColor();
   };
 
-  console.log(quote.author);
-
   return (
     <div
       className="quote-content-container"
@@ -64,7 +62,7 @@ const QuotePage = () => {
         {quote && (
           <>
             <section className="quote-text">
-              <h3>{quote.text}</h3>
+              <h3>"{quote.text}"</h3>
             </section>
             <p>---</p>
             <section className="quote-author">
